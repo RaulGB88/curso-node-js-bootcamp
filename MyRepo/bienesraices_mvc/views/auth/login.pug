@@ -1,0 +1,8 @@
+div
+    h2.text-center Login
+    p(class="text-center")= authenticate
+
+    if authenticate 
+        p Usuario logeado 
+    else 
+        p Fallo al logearse
