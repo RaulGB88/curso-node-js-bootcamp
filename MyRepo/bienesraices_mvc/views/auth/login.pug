@@ -1,8 +1,11 @@
-div
-    h2.text-center Login
-    p(class="text-center")= authenticate
+extends ../layout/index.js
 
-    if authenticate 
-        p Usuario logeado 
-    else 
-        p Fallo al logearse
+block content
+    div
+        h2.text-center.text-6xl  Login
+        p authenticate
+
+        if authenticate 
+            p Usuario logeado 
+        else 
+            p Fallo al logearse

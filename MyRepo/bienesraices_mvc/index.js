@@ -10,6 +10,9 @@ const app = express();
 app.set('view engine', 'pug');
 app.set('views', './views');
 
+// Public Folder
+app.use(express.static('public'));
+
 // 3- Define Port adn Run Project
 const port = 3000
 app.listen(port, () => {
